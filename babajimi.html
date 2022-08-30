@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+            .list-group{
+            display: inline;
+        }
+        .list-item{
+            display: inline;
+            border: 1px solid red;
+            background-color: rgb(189, 185, 185);
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .list-item:link{
+            background-color: tomato;
+            color: rgb(49, 14, 8);
+        }
+        .list-item:visited{
+            background-color: darkolivegreen;
+            color: black;
+        }
+        .list-item:hover{
+            background-color: red;
+        }
+        .list-item:active{
+            background-color: rgb(223, 48, 48);
+        }
+        .form-group{
+            margin-top: 50px;
+        }
+        .forms > label ~ input{
+            display: block;
+        }
+        .submit{
+            background-color: black;
+            color: white;
+            cursor: progress;
+            width: 100px;
+            height: 25px;
+            border-radius: 3px;
+
+        }
+        .submit:hover{
+            background-color: white;
+            color: black;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to my Webpage</h1>
+    <div>
+        <ul class="list-group">
+            <li class="list-item"><a href="babajimi.html">Home</a></li>
+            <li class="list-item"><a href="others/about.html">About us</a></li>
+            <li class="list-item"><a href="others/blog.html">Newsline</a></li>
+            <li class="list-item"><a href="others/contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="form-group">
+        <form action="" class="forms">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" placeholder="Enter your first name">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" placeholder="Enter your last name">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" placeholder="Please provide a valid email">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" >
+            <label for="gender">Female</label>
+            <input type="radio" name="gender" >
+            <label for="gender">Prefer not say</label>
+            <input type="radio" name="gender" >
+            <br>
+            <label for="select">Beans</label>
+            <input type="checkbox">
+            <label for="select">Rice</label>
+            <input type="checkbox">
+            <label for="select">Spagetti</label>
+            <input type="checkbox">
+            <label for="select">Soup</label>
+            <input type="checkbox">
+            <label for="select">Pizza</label>
+            <input type="checkbox">
+
+            <label for="option">Highest level of qualification</label>
+            <select name="qualification" id="">
+                <option value="FSLC">First School Leaving Certificate</option>
+                <option value="O'level">O'Level</option>
+                <option value="B.Sc">Bachelor of Science</option>
+            </select>
+            <br>
+            <label for="tel">Mobile Number</label>
+            <input type="tel" name="tel">
+            <label for="info">A bit about you</label><br>
+            <textarea name="info" id="" cols="30" rows="10">A bit about you</textarea>
+            <input type="submit" class="submit">
+        </form>
+    </div>
+</body>
+</html>
